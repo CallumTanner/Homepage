@@ -1,0 +1,61 @@
+/* =================
+  WRITE YOUR CSS HERE.
+  Check the ⌄ for help with formatting and validating your code.
+  You must write some CSS to complete this challenge.
+   ===================
+*/
+@import url("https://fonts.google.com/specimen/Raleway?subset=cyrillic-ext");
+{
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+ 
+}
+
+ul{
+  margin: 0;
+}
+
+.nav li{
+  display: inline;
+}
+
+.c-site-header {
+ background-color: rgba(0, 0, 0, .6);
+ background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpCiDIvq5FTSSx7LwmyY7ezDjL0I43N9AJxQ&usqp=CAU");
+ background-size: cover;
+ background-blend-mode: multiply;
+ padding-bottom: 30px;
+}
+
+.Nameheading {
+color: #326da8;
+font-family:Raleway;
+}
+
+.cyf-btn {
+  background-color: #199319;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+}
+
+.cyf-btn:hover {
+  background-color: #223094;
+}
+
+
+
+
+
+
+
+/* don't edit this */
+.jest-lite-report__status--pass {
+  background: var(--color-pass);
+}
+.jest-lite-report__errors { display:none }
