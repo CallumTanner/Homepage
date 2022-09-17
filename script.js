@@ -24,7 +24,7 @@ const getHeader = document.querySelectorAll("header"),
   getSiteFooter = document.querySelectorAll(".c-site-footer"),
   getIFrame = document.querySelectorAll("iframe"),
   getImage = document.querySelectorAll("img"),
-  getWords = document.body.innerText;
+  
 
 /* =================
    ASSERTIONS 
