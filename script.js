@@ -1,10 +1,3 @@
-/* =================
-  TESTS, LOOK AT THESE
-  Reading tests will always help you discover your requirements.
-  You can make this window bigger. 
-   ===================
-*/
-
 function getNumberOrString(value) {
   // Convert a string value to a number if possible
   let number_value = Number(value);
@@ -25,6 +18,10 @@ document.getElementById('submit').addEventListener('click', (event) => {
   element_list.appendChild(new_ol);
 
 });
+
+
+
+
 
 
 
