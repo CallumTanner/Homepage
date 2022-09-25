@@ -36,81 +36,8 @@
  <a target="_blank" class="cyf-btn" href="https://codeyourfuture.io/">Visit CodeYourFuture</a> 
 <br>
 <br>
-<input id="text" placeholder="Type name here"/>
-<button id="submit">Submit name</button>
-<button id="facilitator">Choose Name</button>
-<p>Submitted names:</p>
-<ul id="list"></ul>
-<p id="name">Chosen name:</p>    
-    <p>
-  The <button id="noun1">dog</button> <button id="verb">saw</button> the
-  <button id="adjective">white</button>
-  <button id="noun2">cat</button>
-  <button id="day">Day Mode</button>
-  <button id="night">Night Mode</button>
-  <ul id="daylist"> What Mode? </ul>
-  <ul id="nightlist"> What Mode? </ul>
-  <button id="colour">Turn me blue</button>
-  <img id="change" src="https://cdn.pixabay.com/photo/2019/06/25/12/59/click-here-4298145_1280.png" width="200" 
-     height="300" />
-</p>
-    <script>
-      var Facilitator, item;
-
-function getNumberOrString(value) {
-  // Convert a string value to a number if possible
-  let number_value = Number(value);
-  if (Number.isNaN(number_value)) {
-    return value
-  } else {
-    return number_value
-  }
-}
-
-function randomInt(n) {
-  // Return a random number from in [0, n[
-  return Math.floor(Math.random()*n);
-}
-
-function randomMember(arr) {
-  // Return a random member of the array
-  return arr[randomInt(arr.length)]
-}
-
-
-Facilitator = [];
-let element_list = document.getElementById('list');
-Facilitator.forEach((item) => {
-  let new_li = document.createElement('li');
-  new_li.innerText = item;
-
-  element_list.appendChild(new_li);
-});
-
-
-document.getElementById('submit').addEventListener('click', (event) => {
-  Facilitator.push(getNumberOrString(document.getElementById('text').value));
-  if (!!Facilitator.length) {
-    let element_list2 = document.getElementById('list');
-    let new_ol = document.createElement('ol');
-    new_ol.innerText = getNumberOrString(document.getElementById('text').value);
-
-    element_list2.appendChild(new_ol);
-  }
-
-});
-
-document.getElementById('facilitator').addEventListener('click', (event) => {
-  if (!!Facilitator.length) {
-    let element_name = document.getElementById('name');
-    let new_ul = document.createElement('ul');
-    new_ul.innerText = randomMember(Facilitator);
-
-    element_name.appendChild(new_ul);
-  }
-
-});
-    </script>
+<h2>Be sure to leave a comment! </h2> 
+<input type="text" id="posted" placeholder="Type your comments here"/><br><br><button id="submit">Submit Comment</button>
 
      </section>
      <hr>
@@ -152,26 +79,6 @@ Don't delete!-->
   <script src='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/core.js'></script>
 <script src='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.js'></script><script  src="./script.js"></script>
   </body>
-  <script>
-    function getNumberOrString(value) {
-  // Convert a string value to a number if possible
-  let number_value = Number(value);
-  if (Number.isNaN(number_value)) {
-    return value
-  } else {
-    return number_value
-  }
-}
-
-
-
-document.getElementById('submit').addEventListener('click', (event) => {
-  let element_list = document.getElementById('list');
-  let new_ol = document.createElement('ol');
-  new_ol.innerText = getNumberOrString(document.getElementById('posted').value);
-
-  element_list.appendChild(new_ol);
-
-});
-  </script>
+ 
+ 
 </html>
