@@ -36,28 +36,9 @@
  <a target="_blank" class="cyf-btn" href="https://codeyourfuture.io/">Visit CodeYourFuture</a> 
 <br>
 <br>
-<h2>Be sure to leave a comment! </h2> 
+ <h2>Be sure to leave a comment! </h2> 
 <input type="text" id="posted" placeholder="Type your comments here"/><br><br><button id="submit">Submit Comment</button>
-    <script>function getNumberOrString(value) {
-  // Convert a string value to a number if possible
-  let number_value = Number(value);
-  if (Number.isNaN(number_value)) {
-    return value
-  } else {
-    return number_value
-  }
-}
-
-
-
-document.getElementById('submit').addEventListener('click', (event) => {
-  let element_list = document.getElementById('list');
-  let new_ol = document.createElement('ol');
-  new_ol.innerText = getNumberOrString(document.getElementById('posted').value);
-
-  element_list.appendChild(new_ol);
-
-});</script>
+<ul id="list"><ul>
 
      </section>
      <hr>
@@ -88,7 +69,26 @@ document.getElementById('submit').addEventListener('click', (event) => {
 
 
 
+    <script>function getNumberOrString(value) {
+  // Convert a string value to a number if possible
+  let number_value = Number(value);
+  if (Number.isNaN(number_value)) {
+    return value
+  } else {
+    return number_value
+  }
+}
 
+
+
+document.getElementById('submit').addEventListener('click', (event) => {
+  let element_list = document.getElementById('list');
+  let new_ol = document.createElement('ol');
+  new_ol.innerText = getNumberOrString(document.getElementById('posted').value);
+
+  element_list.appendChild(new_ol);
+
+});</script>
 
 
 
