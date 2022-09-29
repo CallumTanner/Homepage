@@ -5,14 +5,16 @@
    ===================
 */
 @import url("https://fonts.google.com/specimen/Raleway?subset=cyrillic-ext");
-{
-  box-sizing: border-box;
-}
+
 html,
 body {
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: #6d6272;
+  color:azure;
+  font-family:Raleway;
+  text-align: center;
  
 }
 
@@ -20,33 +22,145 @@ ul{
   margin: 0;
 }
 
+img {
+  border-radius: 8px;
+}
+
 .nav li{
   display: inline;
 }
 
 .c-site-header {
- background-color: rgba(0, 0, 0, .6);
- background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpCiDIvq5FTSSx7LwmyY7ezDjL0I43N9AJxQ&usqp=CAU");
+ background-color: #29272b;
+ 
  background-size: cover;
  background-blend-mode: multiply;
- padding-bottom: 30px;
+ padding-bottom: 0px;
+ text-align: center;
 }
 
+div.media {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center }
+div.media p {
+  margin: 0 }
+
+  .homebtn {
+    background-color: #2c2b2c; /* navy */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+  }
+  .homebtn:hover {
+    background-color: #300568; /* navy */
+    color: white;
+    text-shadow:0px 0px 15px #d74d63;
+  }
+
+.aboutbtn {
+  background-color: #2c2b2c; /* navy */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+}
+.aboutbtn:hover {
+  background-color: #300568; /* navy */
+  color: white;
+  text-shadow:0px 0px 15px #d74d63;
+}
+
+.interestbtn {
+  background-color: #2c2b2c; /* navy */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+}
+.interestbtn:hover {
+  background-color: #300568; /* navy */
+  color: white;
+  text-shadow:0px 0px 15px #d74d63;
+}
+
+.contactbtn {
+  background-color: #2c2b2c; /* navy */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+}
+
+.contactbtn:hover {
+  background-color: #300568; /* navy */
+  color: white;
+  text-shadow:0px 0px 15px #d74d63;
+}
 .Nameheading {
-color: #326da8;
+color: #e5eaee;
 font-family:Raleway;
 }
 
+.h1{
+  margin-top:  0;
+}
+
+.h2 {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.cyf {
+  color: #fa153c;
+}
+
+.yourfuture {
+  color:#29272b;
+}
+
+.media{
+  align-items: center;
+}
+
 .cyf-btn {
-  background-color: #199319;
-  color: white;
+  background-color: #12772c;
+  color: rgb(252, 246, 246);
   padding: 15px 25px;
   text-decoration: none;
+  justify-content: center;
+  border-radius: 5px;
 }
 
 .cyf-btn:hover {
-  background-color: #223094;
+  background-color: #16c1c7;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  border-radius: 14px;
 }
+
 
 
 
