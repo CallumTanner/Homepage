@@ -140,10 +140,73 @@ font-family:Raleway;
 .yourfuture {
   color:#29272b;
 }
-
-.media{
-  align-items: center;
+.media {
+  display: flex;
+  justify-content: center;
+  max-width: 80%;
+  width: 70%;
+  margin: 40px auto;
 }
+.img-container{
+  display: block;
+  height: 0;
+  position: relative;
+  width: 50%;
+  padding-bottom: 29.75%;
+  flex-shrink: 0;
+}
+
+.iframe-container{
+  display: block;
+  height: 0;
+  position: relative;
+  width: 50%;
+  padding-bottom: 29.75%;
+  flex-shrink: 0;
+}
+
+.img-container img {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+
+@media screen and (max-width: 460px) {
+  .media{
+    flex-direction: column;
+  }
+  .img-container {
+    width: auto;
+    height: auto;
+    padding-bottom: 0;
+  }
+  .img-container img {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+     
+  }
+  .iframe-container{
+    width: 100%;
+    padding-bottom:  56.25%;
+  }
 
 .cyf-btn {
   background-color: #12772c;
