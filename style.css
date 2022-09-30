@@ -42,7 +42,6 @@ img {
 div.media {
   margin-top: 10%;
   margin-bottom: 5%;
-  height: 10em;
   display: flex;
   align-items: center;
   justify-content: center }
@@ -161,7 +160,8 @@ font-family:Raleway;
   border-radius: 14px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1100px) {
+  flex-direction: column;
   img {
     width: 100%;
   }
