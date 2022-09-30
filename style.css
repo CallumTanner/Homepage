@@ -140,6 +140,23 @@ font-family:Raleway;
 .yourfuture {
   color:#29272b;
 }
+.cyfbtn{
+  background-color: #2c2b2c; /* navy */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+}
+.cyfbtn:hover{
+  background-color: #300568; /* navy */
+  color: white;
+  text-shadow:0px 0px 15px #d74d63;
+}
 .media {
   display: flex;
   justify-content: center;
